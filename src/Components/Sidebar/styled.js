@@ -13,6 +13,9 @@ h1{
     font-size:14px;
     background-color:#F9F9F9;
 }
+@media screen and (max-width: 720px) {
+    display: none;
+  }
 `;
 export const Body = styled.div`
 display:flex;

@@ -6,6 +6,10 @@ flex-direction:column;
 margin:16px;
 width:808px;
 
+@media screen and (max-width: 720px) {
+    display: none;
+  }
+
 `;
 export const Locales = styled.div`
 display:flex;

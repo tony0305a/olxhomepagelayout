@@ -4,9 +4,13 @@ export const Wrapper = styled.div`
   display: flex;
   align-items: center;
   width: 100%;
-  justify-content:center;
-  height:80px;
-  border-bottom:1px solid lightgray;
+  justify-content: center;
+  height: 80px;
+  border-bottom: 1px solid lightgray;
+  @media screen and (max-width: 720px) {
+    width: 65%;
+    border-bottom: none;
+  }
 
   #form-search {
     display: flex;
@@ -23,7 +27,7 @@ export const Wrapper = styled.div`
     }
     input {
       display: flex;
-      width:284px;
+      width: 284px;
       flex-grow: 2;
     }
   }
@@ -31,8 +35,11 @@ export const Wrapper = styled.div`
 export const Nav = styled.div`
   display: flex;
   justify-content: space-between;
-  button{
-    margin:8px;
+  button {
+    margin: 8px;
+  }
+  @media screen and (max-width: 720px) {
+    display: none;
   }
 `;
 export const Button = styled.div`
